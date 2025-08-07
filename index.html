@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+      color: #00ff00;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      border-bottom: 2px solid #00ff00;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .game-card {
+      background-color: #001100;
+      border: 1px solid #00ff00;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s, background-color 0.2s;
+      cursor: pointer;
+    }
+
+    .game-card:hover {
+      background-color: #002200;
+      transform: scale(1.05);
+    }
+
+    .game-card a {
+      text-decoration: none;
+      color: #00ff00;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid #00ff00;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🕹️ Game Hub</h1>
+    <p>Select a game to play</p>
+  </header>
+
+  <div class="game-grid">
+    <!-- Add your games below like this -->
+    <div class="game-card">
+      <a href="https://example.com/game1" target="_blank">Game Title 1</a>
+    </div>
+    <div class="game-card">
+      <a href="https://example.com/game2" target="_blank">Game Title 2</a>
+    </div>
+    <div class="game-card">
+      <a href="https://example.com/game3" target="_blank">Game Title 3</a>
+    </div>
+    <!-- Add more game cards here -->
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name or Site – All rights reserved
+  </footer>
+
+</body>
+</html>
